@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>Menu</title>
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="navbar">
+            <ul class="navbar-links">
+            <a href="../../index.html" class="navbar-logo"> 
+              <img src="../../images/logo/logo.png" alt="We love sweets"></a>
+           
+              <li class="navbar-dropdown">
+                <a href="../who_we_are/who_we_are.html">Who we are</a>
+                <div class="dropdown">
+                  <a href="../who_we_are/staff.html">Staff</a>
+                </div>
+              </li>
+              <li class="navbar-dropdown">
+                <a href="../menu/menu.html">Menu</a>
+                <div class="dropdown">
+                  <a href="../menu/cakes.html">Cupcakes</a>
+                  <a href="../menu/donuts.html">Donuts</a>
+                  <a href="../menu/coffe.html">Coffe</a>
+                </div>
+              </li>
+              <li>
+                <a href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+        </nav>
+        <div class="contact-page">
+          <h1>We are located here, if you live near dont hesitate and visit us</h1>
+          <div class="grid-template">
+            
+              <iframe src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=miami+(Your%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                <p><strong> Phone Number: </strong>1-408-626-5889  </p>
+                <p><strong> Email :</strong> welovesweet@something.com</p>
+             
+              <div>
+                
+                <p><strong>Working hours (Monday to Friday)</strong></p>
+                <p>08:00 - 14:00 / 15:00 - 19:00</p>
+              </div>
+          </div>
+          <h1>If you want to contact us, fill in the following information</h1>   
+          <form action="http://vip.groupehn.com:20003/html/infopost.php" method="post">
+            <div class="contact_from"> 
+    
+              <div class="form_section1">
+                         
+                <div>
+                  <label for="firstname" class="txt-label">Your Name</label>
+                  <input type="text" class="txt-input" id="firstname" pattern="[a-zA-Z]+" name="firstname" placeholder="Only letters allowed" required>
+                            
+                  <label for="lastname">Your Last Name</label>
+                  <input type="text" class="txt-input" id="lastname" pattern="[a-zA-Z]+" name="lastname" placeholder="Only letters allowed" required>      
+                </div>
+                  <p style="text-align:center ;">Select your Gender</p>
+                <div class="grid-template">         
+                  <div>
+                    <label for="male">Male</label>   
+                    <input type="radio" name="gender" id="male" value="male" class="radio_button" required >  
+                  </div>
+                  <div>
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="female" value="female" class="radio_button">
+                  </div>
+                  <div>
+                    <label for="other">Other</label>
+                    <input type="radio" name="gender" id="other" value="Other" class="radio_button">    
+                  </div>  
+                </div> 
+    
+              </div>
+              <div class="form_section2">
+                <label for="email">Your Email</label>
+                <input type="email" pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" name="email" id="email" class="txt-input" placeholder="Example: youremail@domain.suffix" required>
+                <label for="phone">Your Phone Number</label>
+                <input type="tel" name="phone" id="phone" class="txt-input" pattern="[0-9]+" placeholder="Only numbers allowed" required>
+                      
+                <label for="country">Select your Country</label>
+                <select name="country" id="country" required class="select-input">
+                  <option value="" selected disabled hidden>Click here</option>
+                  <option value="England">England</option>
+                  <option value="France">France</option>
+                  <option value="Germany">Germany</option>
+                  <option value="Italy">Italy</option>
+                  <option value="Portugal">Portugal</option>
+                  <option value="Spain">Spain</option>
+                  <option value="EEUU">Unated States</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+                      
+              <div class="form_section3">
+                <p>Let us know your request</p>
+                <textarea class="user-request" placeholder="Type here..." name="request" id="request" cols="66" rows="10" required></textarea>
+                <br>          
+              </div>
+              <div class="button-section">
+                <input type="submit" id="submit" name="submit" class="button-submit">
+              </div>
+            </div>
+          </form>    
+      </div>
+    </div>  
+</body>
+</html>
